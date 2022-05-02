@@ -3,6 +3,7 @@ const router = express.Router();
 
 const userController = require('./controllers/user');
 const vehiculeController = require('./controllers/vehicule');
+const placeController = require('./controllers/place');
 
 // Création des routes
 
@@ -17,5 +18,10 @@ router.route('/user/login').get(userController.logged);
 router.route('/vehicule/add').post(vehiculeController.add);
 router.route('/vehicule/delete').post(vehiculeController.delete);
 router.route('/vehicule/update').post(vehiculeController.update);
+
+// Place
+router.route('/place/add').post(placeController.add);
+router.route('/place/delete').post(placeController.delete);
+
 
 module.exports = router;

@@ -79,7 +79,7 @@ module.exports = {
                 await db('user')
                         .where({id: idUser})
                         .del()                    
-                    res.json({data: "Cet utilisateur a bien été supprimée"})
+                    res.json({data: "Cet utilisateur a bien été supprimé"})
             
             } else {
                 res.json({data: 'Vos accès ne vous permettent pas de supprimer un utilisateur'})

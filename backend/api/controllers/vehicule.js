@@ -74,7 +74,7 @@ module.exports = {
                         .where({id: vehiculeExist[0].id})
                         .del()                    
                     
-                        res.json({data: "Ce véhicule a bien été supprimée"})
+                        res.json({data: "Ce véhicule a bien été supprimé"})
                 } else {
                     res.json({data: "Le véhicule n'existe pas"})
                 }
