@@ -12,9 +12,9 @@ CREATE TABLE user (
     updated_at TIMESTAMP
 );
 
-INSERT INTO user(firstname, username, isAdmin) 
+INSERT INTO user(firstname, username, pwd, isAdmin) 
 VALUES (
-    'Océane', 'Faula', '1'
+    'Océane', 'Faula', '1234', '1'
 );
 
 COMMIT;
