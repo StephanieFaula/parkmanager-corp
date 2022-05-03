@@ -145,7 +145,7 @@ module.exports = {
 
 
     login : async(req, res) => {
-
+        console.log(req.body)
         let username = req.body.username;
         let firstname = req.body.firstname;
         let pwd = req.body.pwd
